@@ -1,0 +1,248 @@
+/*Trabalhar no desenho com informação da empresa*/
+.subscrever{
+    background-image: url("Imagens/fundo4.png");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.subscrever p {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 45px;
+    color: white;
+    text-align: center;
+}
+.subscrever span{
+    color:rgb(122, 16, 117);
+}
+
+/*Trabalhar na seta*/
+.seta{
+    margin-top:-260px;
+    margin-left: 50px;
+}
+
+.setaA{
+    margin-bottom: 35px;
+    margin-left: 80%;
+    margin-top: -240px;
+}
+
+/*Trabalhar no botão*/
+.botao{
+    padding: 12px 18px;
+    background-color: rgb(226, 26, 226);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+body h2 .botao:hover{
+    background-color: rgb(233, 104, 194);
+    transform: scale(3);
+}
+.menu{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: right;
+    margin-top:-85px;
+}
+.menu li{
+    display:inline;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    transition: background .4s;
+    border-radius: 8px;
+}
+
+.menu li a:hover{
+    background-color:rgb(255, 0, 200);
+    border-radius: 8px;
+}
+
+/*Arranjar o cabeçalho que envolve logotipo + titulo*/
+.arranjar .logo{
+    justify-content: left;
+    margin:10px;
+}
+.arranjar{
+    display: flex;
+}
+
+/*Trabalhar no objetivo da pagina, logo no inicio:Subscreva a pagina...*/
+h2{
+    font-size: 20px;
+    margin-top: -70px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+/*Trabalhar na faixa das imagens que surjem no incio da pagina*/
+.secoes{
+    display: flex;
+    justify-content: center;
+}
+.secoes .local{
+    margin-top: -20px;
+}
+.secoes .local img{
+    position: relative;
+    height: 350px;
+    width: 210px;
+    margin: 15px;
+}
+.secoes .local img:hover{
+    opacity: 0.6;
+}
+.secoes .local p{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 30px;
+    font-size: 30px;
+    color:white;
+    font-family:'Roboto', sans-serif;
+}
+.secoes .local:hover{
+    scale: 1.1;
+}
+
+/*Trabalhar no rodapé*/
+
+footer{
+    background-color: rgb(223, 38, 198);
+    font-family:'Montserrat', sans-serif;
+    height: 10vh;
+    width: 100vw;
+    
+}
+footer .rodape{
+    display: flex;
+    color:white;
+    margin-left: 32%;
+}
+footer .rodape .nome{
+    margin-left: 20px;
+    margin-top: 29px;
+}
+footer .rodape .listas ul {
+    list-style: none;
+    margin-bottom: -100px;
+}
+footer .rodape .listas li {
+    display: inline;
+    font-size: 40px;
+}
+footer .rodape .listas li a i{
+    text-decoration: none;
+    margin-top: -3;
+    
+}
+
+footer .rodape .listas li a i:hover{
+    opacity: 0.6;
+}
+
+.secoes2{
+    display: flex;
+    justify-content: center;
+}
+
+.secoes2 .local2{
+    background-color: rgb(25, 155, 230);
+    border: 1px solid rgb(42, 86, 231);
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 0 4px rgb(87, 69, 250);
+    text-align: center;
+    padding: 24px;
+    margin: 10px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.secoes2 .local2 p{
+    color: white;
+}
+.secoes2 .local2:hover{
+    scale: 1.1;
+}
+
+
+/*para telemoveis*/
+@media (max-width: 640px) {  
+    body{
+        max-width: 640px;
+        width: 100%;
+        max-height: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .menu{
+        transform: translateX(100%);
+    }
+    .subscrever p{
+        font-size: 14px;
+        color: rgb(199, 19, 199);
+        font-weight: bold;
+    }
+    .subscrever p span{
+        color:white;
+        margin-left: center;
+    }
+    .subscrever{
+            background-image: none;
+            display: grid;                   
+    }
+    h2{
+        font-size: 10px;
+        margin-left: center;
+    }
+    footer{
+        margin-top: 0 px;
+        margin-bottom: 1px;
+    }
+    footer .rodape{
+        position: absolute;
+        margin-left: 20%;
+        font-size: 12px;
+    }
+    body .arranjar .logo{
+        margin-right:center;
+    }
+    .botao{
+        background-position: center;
+        font-size:10px;
+        padding: 6px 9px;
+    }
+    .secoes .local img{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    .secoes .local p{
+        font-size:0;
+    }
+
+    .seta{
+        width: 0px;
+        height: 0px;
+    }
+
+    .setaA{
+        width: 0px;
+        height: 0px;
+    }
+
+}
